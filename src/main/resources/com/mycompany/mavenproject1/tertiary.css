@@ -1,0 +1,96 @@
+/* --- ESTILOS GENERALES --- */
+
+/* Fondo de todas las ventanas y fuente principal [cite: 236, 261] */
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Estilo para todos los botones de la aplicación [cite: 271] */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Botones específicos como "Volver" o "Confirmar" */
+#secondaryButton, .button[text="VOLVER"] {
+    -fx-background-color: #95a5a6;
+}
+
+#secondaryButton:hover, .button[text="VOLVER"]:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+/* --- PANTALLA PRINCIPAL (primary.fxml) --- */
+
+/* El título del gasto total [cite: 314] */
+#labelGastoTitulo {
+    -fx-text-fill: #e74c3c; /* Rojo para resaltar el gasto */
+    -fx-font-weight: bold;
+}
+
+/* El contenedor del gráfico [cite: 297, 315] */
+#panelGrafico {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+/* --- PANTALLA DE FORMULARIO (secondary.fxml) --- */
+
+/* Campos de texto y Spinner [cite: 306, 309, 311] */
+.text-field, .spinner {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 4;
+    -fx-padding: 5;
+}
+
+.text-field:focused, .spinner:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+}
+
+/* RadioButtons para Ingreso/Gasto [cite: 307, 308] */
+.radio-button {
+    -fx-font-size: 14pt;
+    -fx-text-fill: #2c3e50;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #3498db;
+}
+
+/* --- PANTALLA DE HISTORIAL (tertiary.fxml) --- */
+
+/* El listado de movimientos [cite: 300] */
+#miListView {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #dee2e6;
+}
+
+.list-cell {
+    -fx-padding: 10;
+    -fx-border-color: transparent transparent #f1f1f1 transparent;
+}
+
+.list-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #ecf0f1;
+}

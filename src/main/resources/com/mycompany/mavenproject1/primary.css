@@ -1,0 +1,89 @@
+.root {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    
+    /* Forzamos que el tamaño sea idéntico siempre */
+    -fx-padding: 10 20;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-padding: 10 20;
+}
+
+.button:pressed {
+    -fx-background-color: #1f6391;
+}
+
+#secondaryButton, .button[text="VOLVER"], .button[text="Volver"] {
+    -fx-background-color: #95a5a6;
+}
+
+#secondaryButton:hover, .button[text="VOLVER"]:hover, .button[text="Volver"]:hover {
+    -fx-background-color: #7f8c8d;
+    -fx-background-insets: 0;
+}
+
+#labelGastoTitulo {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+#panelGrafico {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.text-field, .spinner {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .spinner:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 1;
+}
+
+.radio-button {
+    -fx-text-fill: #2c3e50;
+}
+
+#miListView {
+    -fx-background-color: white;
+    -fx-border-color: #dcdde1;
+    -fx-border-width: 1;
+    -fx-background-radius: 5;
+}
+
+.list-cell {
+    -fx-padding: 12;
+    -fx-text-fill: #2c3e50;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #ebf5fb;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #3498db;
+}
